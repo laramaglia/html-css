@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(74, 145, 145);
+            margin: 0px;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.26);
+        }
+        header {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(47, 116, 116);
+            padding: 3px;
+            box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.274);
+        }
+        nav > a {
+            text-decoration: none;
+            color: azure;
+            font-weight: bold;
+        }          
+        section {
+            padding: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
+            margin-bottom: 10px;
+        }
+        #assuntos {
+            background-color: rgba(192, 199, 199, 0.219);
+            color: rgb(47, 102, 102);
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        article {
+            background-color: rgb(232, 245, 245);
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(188, 221, 221);
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.26);
+        }
+        main {
+            text-align: justify;
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px 0px 0px;
+        }
+        footer {
+            background-color: rgb(18, 78, 78);
+            color: azure;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: azure;
+            margin: 25px;
+            border-radius: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a> <br>
+            <a href="#">Link</a> <br>
+            <a href="#">Link</a> <br>
+            <a href="#">Link</a> <br>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Esportes Política Tecnologia
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid voluptatum quasi exercitationem, molestiae, modi maxime provident dignissimos voluptate accusantium pariatur consequuntur a neque fuga laudantium vero corporis saepe id nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet labore odio quisquam maiores iure impedit adipisci, ad, aliquid unde vero delectus dolorum tenetur consequuntur similique earum suscipit dolore dolores dicta?
+                </p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Lara com Curso em Vídeo</p>
+
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
