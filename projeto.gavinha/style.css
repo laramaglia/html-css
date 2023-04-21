@@ -1,0 +1,41 @@
+@charset "UTF-8"
+
+@font-face {
+    font-family: 'Concetta';
+    src: url('../fonts/concetta-kalvani-serif-block.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad';
+    src: url('../fonts/myriad-pro-regular.otf') format('opentype');
+}
+
+:root {
+    --cor01: #D9D9D9;
+    --cor02: #A69A60;
+    --cor03: #BF7C41;
+    --cor04: #48594E;
+    --cor05: #0F2624;
+
+    --fonte-destaque: 'Concetta';
+    --fonte-secundaria: 'Myriad';
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+header {
+    background-color: #48594E;
+    color: #0F2624;
+}
+
+
+body { 
+    background-color: #A69A60;
+}
+
+main {
+    background-color: #D9D9D9;
+}
+
+div {
+    display: inline-block;
+}
