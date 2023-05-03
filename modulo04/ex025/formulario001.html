@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form method="get" action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome: </label> 
+            <input type="text" name="nome" id="inome" ></p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><label for="idatanasc">Data de Nascimento: </label> 
+            <input type="date" name="datanasc" id="idatanasc"></p>
+        <p><label for="itel">Telefone: </label> 
+            <input type="tel" name="tel" id="itel"></p>
+        <p><label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail"></p>
+        <p>
+            <input type="submit" value="Go!"></p>
+    </form>
+    /* 
+
+    A principal diferença entre GET e POST é como os dados do formulário são transmitidos ao servidor. Com o método GET, os dados do formulário são anexados à URL da página de destino e enviados como uma sequência de parâmetros de consulta. Com o método POST, os dados do formulário são incluídos no corpo da requisição HTTP.
+    
+    Aqui estão algumas diferenças importantes entre os métodos GET e POST:
+
+    - Com o método GET, os dados do formulário são visíveis na URL da página de destino, o que pode ser um problema de segurança se o formulário contiver informações sensíveis, como senhas. Com o método POST, os dados do formulário não são visíveis na URL.
+   - O método GET tem limitações quanto ao tamanho dos dados que podem ser enviados, enquanto o método POST não tem essas limitações.
+   - O método GET é mais apropriado para pesquisas e solicitações de leitura, enquanto o método POST é mais apropriado para envio de dados sensíveis e solicitações que alteram o estado do servidor.
+   - Em resumo, o método GET é mais adequado quando você deseja recuperar dados do servidor, enquanto o método POST é mais adequado quando você deseja enviar dados ao servidor. 
+   */
+    
+</body>
+</html>
