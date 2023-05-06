@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Escolha seu Estado</legend>
+            <p>
+                <label for="iest">Estado: </label>
+                <select name="est" id="iest">
+                    <option value="" selected> ------- Escolha -------</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>]
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha sua Profissão</legend>
+            <p>
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="listadeprofissao">
+                <datalist id="listadeprofissao">
+                    <option value="PROF">Professor</option>
+                    <option value="ADM">Administrador</option>
+                    <option value="PROG">Programador</option>
+                    <option value="DES">Designer</option>
+                    <option value="GAR">Garçom</option>
+                </datalist>
+                <!-- esta opção permite que o usuário digite uma informação se ela não estiver na lista de opções-->
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Escreva uma Mensagem</legend>
+            <p>
+                <label for="imsg">Mensagem: </label>
+                <textarea name="msg" id="imsg" cols="50" rows="3"></textarea>
+                <!-- para usar textarea, o ideal é que seja dentro do método post, para isso não interferir no tamanho do texto digitado caso passe dos 3 mil bytes suportados pelo método get-->
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" >
+        </p>    
+    </form>    
+</body>
+</html>
