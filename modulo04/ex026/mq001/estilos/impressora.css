@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Estilo para impressão */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace; /* fonte mais fácil para se ler no papel */
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none; /* não há motivo para mostrar o menu na folha imprssa, então ele pode ser excluído, dessa maneira, dessa query */
+
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Este artigo foi impresso através no site www.cursoemvideo.com';
+}
+
