@@ -8,10 +8,23 @@
 
 header {
     background-color: gray;
+    margin-bottom: 10px;
 }
+
+header > h1 {
+    text-align: center;
+}
+
 body {
     background-color: rgb(233, 233, 233);
 }
+
 main {
     background-color: white;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 8px;
+    min-width: 320px;
+    max-width: 600px;
 }
