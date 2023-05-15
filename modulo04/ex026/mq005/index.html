@@ -5,25 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
 <header>
     <h1>Meu Site</h1>
-    <nav>
-        <a href="#">Opção 1</a>
-        <a href="#">Opção 2</a>
-        <a href="#">Opção 3</a>
-        <a href="#">Opção 4</a>
-        <a href="#">Opção 5</a>
-    </nav>
+    <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
 </header>
 <main>
-    <h1>Testando Media Queries</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptates. Veniam pariatur modi incidunt dolorem iste accusantium placeat tenetur culpa aliquid? Iure architecto laudantium incidunt earum nostrum exercitationem eaque dolores.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempora, illo, alias nobis iusto, voluptas sed eveniet dolor doloremque culpa earum hic quasi velit impedit obcaecati rem consequatur? Non, unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cum veniam in obcaecati voluptatibus totam esse quibusdam ex. Nisi, architecto necessitatibus? Quaerat nostrum facere incidunt atque dignissimos dolor nihil. Expedita.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit esse ad unde, nemo exercitationem nam quae at consequuntur! Facere harum numquam in tempore, minus ullam deserunt accusamus cum esse impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nihil excepturi temporibus. Quia dolores nemo quibusdam autem asperiores, a est quasi odit minima veniam. Consectetur molestias a alias ipsa quasi.</p>
-</main>
+    <article>
+        <h2>Testando Media Queries</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptates. Veniam pariatur modi incidunt dolorem iste accusantium placeat tenetur culpa aliquid? Iure architecto laudantium incidunt earum nostrum exercitationem eaque dolores.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempora, illo, alias nobis iusto, voluptas sed eveniet dolor doloremque culpa earum hic quasi velit impedit obcaecati rem consequatur? Non, unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cum veniam in obcaecati voluptatibus totam esse quibusdam ex. Nisi, architecto necessitatibus? Quaerat nostrum facere incidunt atque dignissimos dolor nihil. Expedita.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit esse ad unde, nemo exercitationem nam quae at consequuntur! Facere harum numquam in tempore, minus ullam deserunt accusamus cum esse impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nihil excepturi temporibus. Quia dolores nemo quibusdam autem asperiores, a est quasi odit minima veniam. Consectetur molestias a alias ipsa quasi.</p>
+    </article>
+</main> 
+<script>
+    function clickMenu() {
+        if (menu.style.display == 'block') {
+            menu.style.display = 'none'
+        } else {
+            menu.style.display = 'block'
+        }
+    }
     
+</script>   
 </body>
 </html>

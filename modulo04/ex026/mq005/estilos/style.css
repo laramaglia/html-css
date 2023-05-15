@@ -5,6 +5,9 @@
     padding: 0px;
     margin: 0px;
 }
+body, html {
+    background-color: rgb(233, 233, 233);
+}
 
 header {
     background-color: gray;
@@ -12,19 +15,63 @@ header {
 }
 
 header > h1 {
+    padding: 10px;
     text-align: center;
 }
 
-body {
-    background-color: rgb(233, 233, 233);
+#burger {
+    background-color: rgb(58, 57, 57);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    color: black;
+    background-color: white;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none; /* essa propriedade tira as bolinhas dos itens da lista */
+}
+
+menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border-top: 2px solid gray;
+}
+
+menu > ul > li > a:hover {
+    background-color: rgb(184, 184, 184);
+    color: black;
 }
 
 main {
     background-color: white;
     margin: auto;
     padding: 10px;
-    text-align: justify;
     border-radius: 8px;
-    min-width: 320px;
-    max-width: 600px;
+    width: 100%;
+    max-width: 750px;
+    min-width: 300px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
 }
