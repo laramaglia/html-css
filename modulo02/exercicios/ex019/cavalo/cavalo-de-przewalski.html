@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/media-query.css">
 </head>
-<body>
+<body onresize="aumentoJanela()">
     <header>
             <h1>Cavalo-de-przewalski</h1>
             <h2>A última espécie sobrevivente de cavalos selvagens de volta às pradarias da Mongólia</h2>
-            <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <span id="burger" class="material-symbols-outlined" onclick="clickMenu()" >menu</span>
             <menu id="menu">
                 <ul>
                     <li><a href="#inicio">Início</a>
@@ -76,6 +76,14 @@
                 menu.style.display = 'block'
             }
         }
+        function aumentoJanela() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+        
     </script>
 </body>
 </html>

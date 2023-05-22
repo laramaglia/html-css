@@ -8,12 +8,45 @@
 
     #conser {
         display: block;
+        float: left;
+        font-size: 1.4em;
+        padding-top: 45px;
     }
 
     #reino {
         display: block;
         float: right; 
+        padding-right: 45px;
+        font-size: 1.1em;
     }
+
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        height: 15px;
+        width: 100vw;
+        background-color: #858d61;
+        padding-bottom: 7px;
+        
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        width: 10vw;
+        padding-right: 5px;
+    }
+
+    aside {
+        height: 200px;
+    }
+
+    aside > div {
+        padding: 15px 40px;
+    }
+    
 
 
 }
