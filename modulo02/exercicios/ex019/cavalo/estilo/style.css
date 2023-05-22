@@ -28,7 +28,7 @@ body, html {
 
 header {
     background-color: var(--cor5); 
-    width: 90vw;
+    width: 100vw;
     height: 200px;
     padding: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.600);
@@ -83,6 +83,7 @@ main {
     margin: auto;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.507);
 }
 
 section {
@@ -106,13 +107,6 @@ img {
     margin: 15px 0px;
 }
 
-#video {
-    
-}
-iframe {
-    min-width: 70%;
-}
-
 aside {
     background-color: #F6CA83;
     font-weight: bold;
@@ -129,6 +123,7 @@ aside li {
 }
 
 footer {
+    width: 100vw;
     background-color: #323524;
     font-size: 0.7em;
     color: #d7daa0;
