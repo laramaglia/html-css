@@ -5,59 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio Livre</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#descrição">Descrição</a>
-            <a href="#ecologia">Ecologia</a>
-            <a href="#cruzamentos">Cruzamento</a>
-            <a href="#referencias">Referências</a>
-        </nav>
             <h1>Cavalo-de-przewalski</h1>
             <h2>A última espécie sobrevivente de cavalos selvagens de volta às pradarias da Mongólia</h2>
+            <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu id="menu">
+                <ul>
+                    <li><a href="#inicio">Início</a>
+                    <li><a href="#descricao">Descrição</a>
+                    <li><a href="#ecologia">Ecologia</a>
+                    <li><a href="#cruzamento">Cruzamento</a>
+                    <li><a href="#referencias">Referências</a>
+                </ul>
+            </menu>
     </header>
     <main>
-        <article>
+        <section id="inicio">
             <p>O cavalo-de-przewalski (Equus ferus przewalskii) é uma subespécie selvagem de cavalo (Equus ferus), nativa dos desertos da Mongólia. Oficialmente se encontrava extinta na natureza, mas, graças a um projecto internacional, tem sido reintroduzida em seu habitat natural.</p>
             <img src="imagens/cavalo.600.jpg" alt="Cavalo-de-przewalski">
             <p>O cavalo-de-przewalski foi descrito pela primeira vez pelo general e naturalista amador russo Nikolaï Mikhaïlovitch Prjevalski em 1881, que viajou à sua procura após se deparar com relatos da sua existência. A descoberta gerou o interesse de vários zoos europeus, que adquiriram cerca de 20 exemplares. A população selvagem desapareceu nos anos 1960, tendo o último animal selvagem sido avistado em 1969. Desde o início dos anos 90 vários programas de reprodução em cativeiro têm encontrado sucesso, e já houve a libertação de uma manada na Mongólia, tornando-se assim um cavalo assilvestrado como o garrano português.</p>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XUOPvoU3264" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/XUOPvoU3264" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <p>Em 2020 clonaram com sucesso um cavalo desta espécie no Jardim Zoológico de San Diego, nos Estados Unidos da América.</p>
-            <h2>Descrição</h2>
+            <h2 id="descricao">Descrição</h2>
             <p>O cavalo-de-przewalski é muito semelhante ao cavalo doméstico, mas menor e mais robusto. Os adultos medem cerca de 2 metros de comprimento e pesam em média cerca de 300 kg. A sua pelagem é castanha parda e a crina, erecta, é de cor negra. Alguns exemplares têm as patas riscadas, fazendo lembrar zebras.</p>
-            <h2>Ecologia</h2>
+            <h2 id="ecologia">Ecologia</h2>
             <p>A organização social desses animais faz-se em grupos familiares dominados por um macho, várias fêmeas e suas pequenas crias. Os juvenis abandonam o grupo por volta dos 3 anos, sendo as fêmeas incorporadas desde logo noutra manada. Os jovens machos passam vários anos em pequenos grupos, antes de se lançarem na conquista do seu próprio grupo de fêmeas.</p>
-            <h2>Cruzamento</h2>
+            <h2 id="cruzamento">Cruzamento</h2>
             <p>Em Portugal esta raça de cavalo não existe sob a forma pura. Existem alguns equídeos que são extremamente parecidos visualmente, mas são resultado de cruzamento com outras raças de cavalos.</p>
             <aside>
-                <h3>Estado de conservação:</h3>
-                <p>Espécie em perigo</p>
-                <h3>Classificação científica</h3>
-                <ul>
-                    <li>Reino: Animalia</li>
-                    <li>Filo: Chordata</li>
-                    <li>Classe: Mammalia</li>
-                    <li>Ordem: Perissodactyla</li>
-                    <li>Família: Equidae</li>
-                    <li>Género: Equus</li>
-                    <li>Espécie: Equus ferus</li>
-                    <li>Subespécie: E. ferus przewalskii</li>
-                </ul>
-                <h3>Nome binomial</h3>
-                <p>Equus ferus przewalskii ( Poliakov, 1881)</p>
+                <div id="conser">
+                    <h3>Estado de conservação:</h3>
+                    <p>Espécie em perigo</p>
+                    <h3>Nome binomial</h3>
+                    <p>Equus ferus przewalskii ( Poliakov, 1881)</p>
+                </div>
+                <div id="reino">
+                    <h3>Classificação científica</h3>
+                    <ul>
+                        <li>Reino: Animalia</li>
+                        <li>Filo: Chordata</li>
+                        <li>Classe: Mammalia</li>
+                        <li>Ordem: Perissodactyla</li>
+                        <li>Família: Equidae</li>
+                        <li>Género: Equus</li>
+                        <li>Espécie: Equus ferus</li>
+                        <li>Subespécie: E. ferus przewalskii</li>
+                    </ul>
+                </div>
             </aside>
-            <h2>Referências</h2>
+            <h2 id="referencias">Referências</h2>
             <p>Extinto no Meio Natural: Uma espécie está extinta no meio natural quando se sabe que sobrevive apenas em cultivo, em cativeiro ou como uma população naturalizada a uma distância considerável de sua área natural. O cavalo de Przewalski (Equus przewalskii) é o único cavalo selvagem verdadeiro. Originalmente, esta espécie se distribuía na Mongólia, na China e no Turquestão. Restam ainda cerca de 200 cavalos, todos em zoológicos</p>
             <p>Origem: Wikipédia, a enciclopédia livre.</p> 
-        </article>
+        </section>
     </main>
     <footer>
         Este texto é disponibilizado nos termos da licença Atribuição-CompartilhaIgual 3.0 Não Adaptada (CC BY-SA 3.0) da Creative Commons; pode estar sujeito a condições adicionais. Para mais detalhes, consulte as condições de utilização.
     </footer>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
